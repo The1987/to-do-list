@@ -1,11 +1,44 @@
-/* public/css/styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
-    color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+  }
+
+p {
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.form-section,
+.task-section,
+.instructions {
+  /* border: 1px solid red; */
+  padding: 20px 0px;
 }

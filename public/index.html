@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/form.css">
 </head>
+
 <body>
-    <h1>To Do List App</h1>
-    <p>This is a simple Node.js app uses with HTML, CSS, and JavaScript in the frontend and Node/Express in backend.</p>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="form-section">
+            <form class="task-form">
+                <!-- <label for="task-input">New Task:</label> -->
+                <input id="task-input" type="text" placeholder="Enter a new task">
+                <button id="add-task-button" type="submit">Add Task</button>
+            </form>
+        </div>
+        <div class="task-section">
+            <h2>Things To Do</h2>
+            <ul id="task-list">
+                <!-- Tasks will be listed here -->
+            </ul>
+            <noscript>
+                <div class="no-js-message">
+                    <p>Please enable JavaScript to use this app.</p>
+                </div>
+            </noscript>
+        </div>
+    </div>
+
+
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
